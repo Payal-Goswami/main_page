@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📚 Study Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 40px 0;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      gap: 25px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, background 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.25);
+    }
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.gradient-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #00c6ff, #0072ff, #00ffb3);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  animation: slideIn 1s ease-out;
+  margin-top: 50px;
+  letter-spacing: 2px;
+}
+
+.slide-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 26px;
+  font-size: 1rem;
+  color: #00ffb3;
+  border: 2px solid #00ffb3;
+  border-radius: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  font-family: 'Poppins', sans-serif;
+}
+.slide-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, #00ffb3, #00c6ff);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+.slide-btn:hover {
+  color: #0b0b0b;
+}
+.slide-btn:hover::before {
+  left: 0;
+}
+
+
+
+ .slide-btn {
+    position: relative;
+    display: inline-block;
+    padding: 14px 35px;
+    font-size: 1rem;
+    color: #00ffe5;
+    border: 2px solid #00ffe5;
+    border-radius: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.4s ease, box-shadow 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .slide-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: -100%;
+    width: 100%; 
+    height: 100%;
+    background: linear-gradient(90deg, #00ffe5, #00b3ff, #0072ff);
+    transition: left 0.4s ease;
+    z-index: -1;
+  }
+
+  .slide-btn:hover {
+    color: #0a0a0a;
+    box-shadow: 0 0 20px #00e0ff, 0 0 40px #00e0ff;
+  }
+
+  .slide-btn:hover::before {
+    left: 0;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="gradient-heading">Start your open source journey 🌐</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>✨ Open Source Project Recommender</h2>
+      <p>Get Repositroy for open source contribution on github.</p>
+      <a href="open-soucre-repo-finder.onrender.com/" target="_blank" class="slide-btn">Open Source Project Recommender</a>
+    </div>
+    <div class="card">
+      <h2>🤖 ChatBot</h2>
+      <p>Ask anything related to open source and skill learning!</p>
+      <a href="open-soucre-repo-finder.onrender.com/" target="_blank" class="slide-btn">ChatBot</a>
+    </div>
+    <div class="card">
+      <h2>💻 GeeksforGeeks</h2>
+      <p>Master Data Structures and Algorithms, Web Dev, and more.</p>
+      <a href="https://www.geeksforgeeks.org" target="_blank" class="slide-btn">Visit GeeksforGeeks</a>
+    </div>
+
+    <div class="card">
+      <h2>📖 W3Schools</h2>
+      <p>Learn HTML, CSS, JavaScript, and more interactively.</p>
+      <a href="https://www.w3schools.com/" target="_blank" class="slide-btn">Visit W3Schools</a>
+    </div>
+
+    <div class="card">
+      <h2>🌍 MDN Web Docs</h2>
+      <p>Official, detailed web documentation for HTML, CSS, JS.</p>
+      <a href="https://developer.mozilla.org/" target="_blank" class="slide-btn">Open MDN Docs</a>
+    </div>
+
+  </main>
+
+  <footer>
+    
+  </footer>
+</body>
+</html>
